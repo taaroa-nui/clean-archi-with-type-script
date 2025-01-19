@@ -1,6 +1,7 @@
 import express from 'express'
+import serverConfig from './frameworks/webserver/server'
 
 const app = express()
-console.log(typeof app)
+serverConfig(app)
 
 export default app
