@@ -1,5 +1,5 @@
 import { RequestHandler, Request, Response } from 'express'
-import { EventBody, EventQuery } from '~/entities/models/historicEvent'
+import { EventBody, EventQuery } from '~/entities/models/event/historicEvent'
 
 export default function eventController() {
   const getAllEvents: RequestHandler<{}, EventBody, EventQuery> =

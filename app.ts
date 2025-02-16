@@ -3,9 +3,9 @@ import { serverConfig } from './src/frameworks/webserver'
 import routesIndex from './src/frameworks/webserver/routes/routesIndex'
 import expressConfig from './src/frameworks/webserver/expressConfig'
 
-const app = express()
-serverConfig(app).startServer()
-expressConfig(app)
-routesIndex(app)
+const expressApp = express()
+serverConfig(expressApp).startServer()
+expressConfig(expressApp)
+routesIndex(expressApp)
 
-export default app
+export default expressApp
